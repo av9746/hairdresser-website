@@ -13,7 +13,7 @@
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-    max-height: 350px;
+    max-height: 400px;
 }
 
 #selection, #selection2, #selection3 {
@@ -30,6 +30,7 @@
 
 .panel-heading {
     overflow: auto;
+    cursor: pointer;
 }
 
 .panel-body {
@@ -38,6 +39,11 @@
     color: #444546;
     overflow: auto;
 }
+
+#selection .panel-default:hover {
+    opacity: 0.75;
+}
+
 #background1{
     background: url("http://style.over.net/wp-content/uploads/2014/02/Nega-las-Keratinski-tretma1.jpg");
     background-position: center;
@@ -99,4 +105,13 @@ h2 {
 
 a:hover {
     color:white;
+}
+
+/*-------------------responsive-----------------*/
+
+@media only screen and (max-width: 767px) {
+
+    #navsearch button {
+        margin-top: 10px;
+    }
 }
